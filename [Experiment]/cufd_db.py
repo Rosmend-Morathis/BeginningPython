@@ -129,6 +129,8 @@ while True:
             print('该序号不存在！')
             continue
     elif choose == 'q':
+        cursor.close()
+        db.close()
         exit(0)
     else:
         print('非法输入，请重试！')
